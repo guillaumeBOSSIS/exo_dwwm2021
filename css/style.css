@@ -74,7 +74,7 @@
 
 
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: Montserrat, sans-serif;
 	color: var(--font-color);
 	font-size: 1.6rem;
 	line-height: 1.5;
@@ -82,7 +82,39 @@ body {
 	background-color: #fff;
 }
 
-/* Fonts styles globaux */
+/* Typography */
+
+h1,
+h2,
+h3 {
+     font-family: Raleway, sans-serif;
+}
+
+h2 {
+     font-weight: 700;
+     font-size: 4.8rem;
+     line-height: 1;
+     padding-top: 4rem;
+     margin-bottom: 4rem;
+
+}
+
+h3 {
+     font-weight: 600;
+     font-size: 2.4rem;
+     padding-top: 4rem;
+     padding-bottom: 4rem;
+}
+
+p {
+     font-size: 2rem;
+     color: var(--font-color);
+}
+
+a {
+     text-decoration: none;
+     color: #fff;
+}
 
 
 /* Components */
@@ -99,7 +131,7 @@ body {
 }
 
 
-/* Points de rupture */
+/* Breakpoints */
 
 @media screen and (min-width: 36em) { /* 36em = 36 * 16 (base navigateur) = 576px */
 	.container {
@@ -126,3 +158,169 @@ body {
 }
 
 /* Header */
+
+.main-header {
+     color: #fff;
+     background-color: var(--primary);
+}
+
+
+.logo {
+     font-size: 4.8rem;
+     text-transform: uppercase;
+     font-weight: 700;
+     font-family: Raleway, sans-serif;
+}
+
+
+/* Hero */
+
+.hero {
+     display:flex;
+     min-height: calc(100vh - 10rem); /* 10rem = hauteur du menu */
+     background-image: url(../img/home/bg-hero.jpg);
+     background-size: cover;
+     background-position: center;
+}
+
+.hero h1 {
+     font-size: 7.2rem;
+     line-height: 1.2;
+     color: #fff;
+     text-align: left;
+}
+
+.hero-decoration {
+     /* display: grid;
+     justify-content: right; */
+     max-width: 95.6rem;
+     max-height: 35.1rem;
+     background-color: #00000080;
+     /* margin-top: 24rem; */
+     /* margin-bottom: 12rem; */
+}
+.btn {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--primary);
+     width: 100%;
+     padding-top: .6rem;
+     padding-bottom: .6rem;
+     font-size: 2.4rem;
+}
+
+.btn img {
+     margin-left: 1.6rem;
+     max-width: 2rem;
+     max-height: 2rem;
+}
+
+.hero-decoration .cta-link {
+     font-size: 4rem;
+     font-weight: 600;
+     border: .1rem solid #707070;
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+     padding-left: 3rem;
+     padding-right: 3rem;
+     /* margin-top: 3rem;
+     margin-bottom: 3rem; */
+     
+}
+
+.news-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 3.2rem
+}
+
+.news-card {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     box-shadow: 0px 0px 48px #00000029;
+     border-radius: .4rem;
+     transition: 0.2s;
+     margin-bottom: 4rem;
+}
+
+/* .news-card :nth-child(1) {
+     border-radius: .4rem .4rem 0 0;
+     margin-bottom: 2.4rem;
+} */
+
+.news-card-img img{
+     border-radius: .4rem .4rem 0 0;
+     
+}
+
+.news-card-txt {
+     padding-top: 2.4rem;
+     padding-bottom: 2.4rem;
+     padding-left: 1.5rem;
+     padding-right: 1.4rem;
+     text-align: left;
+}
+
+.news-card-date {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     padding-top: 2.4rem;
+}
+
+.news-card-date img {
+     margin-right: .8rem;
+     max-width: 1.5rem;
+}
+
+.news-card h3 {
+     padding-top: 1.6rem;
+     padding-bottom: 1.6rem;
+}
+
+.news-card .btn {
+     border-radius: 0 0 .4rem .4rem;
+     color: #fff;
+}
+
+.news-card:hover {
+     /* border: 1px solid black; */
+     transform: scale(1.05);
+     box-shadow: 0px 0px 48px #00000029
+}
+.news-card-link {
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+}
+
+.news-card-link:focus {
+     background-color: rgba(0,0,0,.5);
+}
+
+
+
+
+
+
+
+/* Students */
+
+.students {
+     background-color: var(--primary);
+}
+
+.students-list {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 4rem;
+}
+
+.student-item {
+     display: flex;
+     flex-direction: column;
+}

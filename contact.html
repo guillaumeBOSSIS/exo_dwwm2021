@@ -10,6 +10,52 @@
 </head>
 
 <body>
-    <h1>Nous contacter</h1>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">DWWM</div>
+            <nav class="main-nav">
+                <button class="toggle-menu" aria-expanded="false" aria-controls="menu">Menu</button>
+                <!-- ul.menu>li.menu-item*5>a.menu-link -->
+                <ul id="menu" class="menu" role="list" hidden>
+                    <li class="menu-item"><a href="#" class="menu-link">Accueil</a></li>
+                    <li class="menu-item"><a href="course.html" class="menu-link">La formation</a></li>
+                    <li class="menu-item"><a href="students.html" class="menu-link">Les étudiants</a></li>
+                    <li class="menu-item"><a href="news.html" class="menu-link">Actualités</a></li>
+                    <li class="menu-item"><a href="contact.html" class="menu-link">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <h1>Nous contacter</h1>
+            <form action="" class="contact-form">
+                <div class="formgroup">
+                    <label for="name">Votre nom</label>
+					<input type="text" id="name" placeholder="Entrez votre nom" name="name" required>
+                </div>
+                <div class="formgroup">
+					<label for="email">Votre e-mail</label>
+					<input type="email" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+				</div>
+                <div class="formgroup fullwidth">
+					<label for="msg">Votre message</label>
+					<textarea name="msg" id="msg" placeholder="Tapez votre message" required></textarea>
+				</div>
+                <div class="formgroup fullwidth align-right">
+					<button type="submit" class="btn btn-form">Envoyer<img src="img/icons/icon-arrow-circle-right.svg" alt="" aria-hidden="true"></button>
+				</div>
+                <div class="formgroup fullwidth align-right">
+					<button type="submit" class="btn-form">Envoyer<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><defs><style>.a{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><g transform="translate(1 1)"><path class="a" d="M22,12A10,10,0,1,1,12,2,10,10,0,0,1,22,12Z" transform="translate(-2 -2)"/><path class="a" d="M12,16l4-4L12,8" transform="translate(-2 -2)"/><path class="a" d="M8,12h8" transform="translate(-2 -2)"/></g></svg></button>
+				</div>
+
+            </form>
+        </div>
+    </section>
+
+    <script src="js/nav.js"></script>
+
 </body>
 </html>

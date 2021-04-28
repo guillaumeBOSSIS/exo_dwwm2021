@@ -13,10 +13,11 @@
 
 <header class="main-header">
     <div class="container">
-        <div class="logo">Dwwm</div>
+        <div class="logo">DWWM</div>
         <nav class="main-nav">
+            <button class="toggle-menu" aria-expanded="false" aria-controls="menu">Menu</button>
             <!-- ul.menu>li.menu-item*5>a.menu-link -->
-            <ul class="menu">
+            <ul id="menu" class="menu" role="list" hidden>
                 <li class="menu-item"><a href="#" class="menu-link">Accueil</a></li>
                 <li class="menu-item"><a href="course.html" class="menu-link">La formation</a></li>
                 <li class="menu-item"><a href="students.html" class="menu-link">Les étudiants</a></li>
@@ -30,8 +31,11 @@
 <section class="hero">
     <div class="container">
         <div class="hero-decoration">
-            <h1>Bienvenu sur le site de la promotion DWWM2021-1</h1>
-            <a href="students.html" class="cta-link btn">Rencontrez nos étudiants</a>
+            <h1>Bienvenue sur le site de la promotion DWWM2021-1</h1>
+            <div class="hero-btn">
+
+                <a href="students.html" class="cta-link">Rencontrez nos étudiants</a>
+            </div>
         </div>
     </div>
 </section>
@@ -40,48 +44,41 @@
     <div class="container">
         <h2>Les dernières actualités</h2>
         <div class="news-grid">
-
-            <article class="news-card">
-                <figure class="news-card-img"> 
+            <article class="card">
+                <figure class="card-img"> 
                     <img src="img/news/news-01.jpg" srcset="img/news/news-01@2x.jpg" alt="Gros plan sur un écran d'ordinateur affichant du code">
                 </figure>
-                <div class="news-card-txt">
-
-                    <div class="news-card-date">
-                        <img src="img/icons/icon-date.svg" alt="Icône de calendrier">
-                        12/02/2020
-                    </div>
+                <div class="card-news-body">
+                    <div class="card-news-date"><img src="img/icons/icon-date.svg" alt="Icône de calendrier">12/02/2020</div>
                     <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
+                    <p class="p-card">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                 </div>
-                    <div class="btn">Lire la suite<img src="img/icons/icon-arrow-circle-right.svg" alt=""></div>
-                    <a href="news-detail.html" class="news-card-link"></a>
+                <div class="btn">Lire la suite<img src="img/icons/icon-arrow-circle-right.svg" alt="" aria-hidden="true"></div>
+                <a href="news-detail.html" class="card-link"></a>
             </article>
-            <article class="news-card">
-                <a href="news-detail.html" class="news-card-link">
-                    <figure>
-                        <img src="img/news/news-02.jpg" srcset="img/news/news-02@2x.jpg" alt="Un ordinateur portable qui affiche du code">
-                    </figure>
-                    <img src="img/icons/icon-date.svg" alt="Icône de calendrier">
-                    <p class="date">12/02/2020</p>
-                    <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
-                    <div class="btn">Lire la suite<img src="img/icons/icon-arrow-circle-right.svg" alt=""></div>
-
-                </a>
+            <article class="card">
+                <figure class="card-img"> 
+                    <img src="img/news/news-02.jpg" srcset="img/news/news-02@2x.jpg" alt="Un ordinateur portable qui affiche du code">
+                </figure>
+                <div class="card-news-body">
+                    <div class="card-news-date"><img src="img/icons/icon-date.svg" alt="Icône de calendrier">12/02/2020</div>
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p class="p-card">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
+                </div>
+                <div class="btn">Lire la suite<img src="img/icons/icon-arrow-circle-right.svg" alt="" aria-hidden="true"></div>
+                <a href="news-detail.html" class="card-link"></a>
             </article>
-            <article class="news-card">
-                <a href="news-detail.html" class="news-card-link">
-                    <figure>
-                        <img src="img/news/news-03.jpg" srcset="img/news/news-03@2x.jpg" alt="Gros plan sur un clavier d'ordinateur">
-                    </figure>
-                    <img src="img/icons/icon-date.svg" alt="Icône de calendrier">
-                    <p class="date">12/02/2020</p>
+            <article class="card">
+                <figure class="card-img"> 
+                    <img src="img/news/news-03.jpg" srcset="img/news/news-03@2x.jpg" alt="Gros plan sur un clavier d'ordinateur">
+                </figure>
+                <div class="card-news-body">
+                    <div class="card-news-date"><img src="img/icons/icon-date.svg" alt="Icône de calendrier">12/02/2020</div>
                     <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h3>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
-                    <div class="btn">Lire la suite<img src="img/icons/icon-arrow-circle-right.svg" alt=""></div>
-
-                </a>
+                    <p class="p-card">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
+                </div>
+                <div class="btn">Lire la suite<img class="arrow" src="img/icons/icon-arrow-circle-right copy (2).svg"  alt="" aria-hidden="true">
+                <a href="news-detail.html" class="card-link"></a>
             </article>
         </div>
     </div>
@@ -92,28 +89,28 @@
         <h2>Rencontrez les étudiants</h2>
         <ul class="students-list">
             <li class="student-item">
-                <figure>
+                <figure class="student-img">
                     <img src="img/students/portrait-francine-auhi-01.png" srcset="img/students/portrait-francine-auhi-01@2x.png" alt="Portrait de Francine Auhi">
                 </figure>
                 <h3>Francine Auhi</h3>
                 <a href="students-pres.html">En savoir plus</a>
             </li>
             <li class="student-item">
-                <figure>
+                <figure class="student-img">
                     <img src="img/students/portrait-ali-korn-01.png" srcset="img/students/portrait-ali-korn-01@2x.png" alt="Portrait de Ali Korn">
                 </figure>
-                <h3>Francine Auhi</h3>
+                <h3>Ali Korn</h3>
                 <a href="students-pres.html">En savoir plus</a>
             </li>
             <li class="student-item">
-                <figure>
+                <figure class="student-img">
                     <img src="img/students/portrait-jean-vascrit-01.png" srcset="img/students/portrait-jean-vascrit-01@2x.png" alt="Portrait de Jean Vascrit">
                 </figure>
                 <h3>Jean Vascrit</h3>
                 <a href="students-pres.html">En savoir plus</a>
             </li>
             <li class="student-item">
-                <figure>
+                <figure class="student-img">
                     <img src="img/students/portrait-lara-velle-01.png" srcset="img/students/portrait-lara-velle-01@2x.png" alt="Portrait de Lara Velle">
                 </figure>
                 <h3>Lara Velle</h3>
@@ -126,44 +123,67 @@
 <section class="modules">
     <div class="container">
         <h2>Les modules de la formation</h2>
-        <ul class="modules-list">
-            <article class="module-card">
-                <figure>
+        <div class="modules-grid">
+            <article class="card">
+                <figure class="card-img"> 
                     <img src="img/modules/module-html-css.jpg" srcset="img/modules/module-html-css@2x.jpg" alt="Plan serré sur une partie d'écan d'ordinateur affichant du code">
                 </figure>
-                <h3>Module HTML/CSS</h3>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
-                <a href="course-module.html" class="news-card-link">Lire la suite<img src="img/icons/icon-arrow-circle-right.svg" alt="" aria-hidden="true"></a>
+                <div class="card-module-body">
+                    <h3>Module HTML/CSS</h3>
+                    <p class="p-card">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                </div>
+                <div class="btn">Lire la suite<img src="img/icons/icon-arrow-circle-right.svg" alt="" aria-hidden="true"></div>
+                <a href="course-module.html" class="card-link"></a>
             </article>
-        </ul>
+            <article class="card">
+                <figure class="card-img"> 
+                    <img src="img/modules/module-javascript-01.jpg" srcset="img/modules/module-javascript-01@2x.jpg" alt="Plan serré sur une partie d'écan d'ordinateur affichant du code">
+                </figure>
+                <div class="card-module-body">
+                    <h3>Module JavaScript</h3>
+                    <p class="p-card">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
+                </div>
+                <div class="btn">Lire la suite<img src="img/icons/icon-arrow-circle-right.svg" alt="" aria-hidden="true"></div>
+                <a href="course-module.html" class="card-link"></a>
+            </article>
+        </div>
     </div>
 </section>
 
-<footer>
+<footer class="main-footer">
     <div class="container">
-        <address>
-            <ul class="address-list">
-                <h2>Développeur Web et Web Mobile</h2>
-                <li class="address-item">CEFIM</li>
-                <li class="address-item">32 Avenue Marcel Dassault</li>
-                <li class="address-item">37200 Tours</li>
-                <li class="address-item">T : 02 47 40 26 80</li>
-            </ul>
-        </address>
-        <div class="legal">
-            <a href="policy.html">Mentions légales</a>
-            <a href="policy.html">Politique de confidentialité</a>
-        </div>
-        <div class="social-links">
-            <ul class="social-list">
-                <li class="social-icon"><a href="#"><img src="img/icons/icon-facebook.svg" alt="Icône de Facebool"></a></li>
-                <li class="social-icon"><a href="#"><img src="img/icons/icon-twitter.svg" alt="Icône de Twitter"></a></li>
-                <li class="social-icon"><a href="#"><img src="img/icons/icon-linkedin.svg" alt="Icône de Linkedin"></a></li>
-            </ul>
+        <div class="main-footer-grid">
+            <address class='main-footer-address'>
+                <p class="main-footer-title">Développeur Web et Web Mobile</p>
+                <ul class="address-list">
+                    <li class="address-item">CEFIM</li>
+                    <li class="address-item">32 Avenue Marcel Dassault</li>
+                    <li class="address-item">37200 Tours</li>
+                    <li class="address-item">T : 02 47 40 26 80</li>
+                </ul>
+            </address>
+            <div class="main-footer-legal">
+                <a class="legal-link" href="policy.html">Mentions légales</a>
+                <a class="legal-link" href="policy.html">Politique de confidentialité</a>
+            </div>
+            <div class="main-footer-social">
+                <ul class="social-list">
+                    <li>
+                        <a class="social-icon" href="#"><img src="img/icons/icon-facebook.svg" alt="Icône de Facebook"></a>
+                    </li>
+                    <li>
+                        <a class="social-icon" href="#"><img src="img/icons/icon-twitter.svg" alt="Icône de Twitter"></a>
+                    </li>
+                    <li>
+                        <a class="social-icon" href="#"><img src="img/icons/icon-linkedin.svg" alt="Icône de Linkedin"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-
 </footer>
+
+<script src="js/nav.js"></script>
 
 </body>
 

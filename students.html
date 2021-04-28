@@ -4,12 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&Eacute;tudiants - DWWM2021-1 Guillaume BOSSIS</title>
+    <title>La formation - DWWM2021-1 Guillaume BOSSIS</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>Les étudiants</h1>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">DWWM</div>
+            <nav class="main-nav">
+                <button class="toggle-menu" aria-expanded="false" aria-controls="menu">Menu</button>
+                <!-- ul.menu>li.menu-item*5>a.menu-link -->
+                <ul id="menu" class="menu" role="list" hidden>
+                    <li class="menu-item"><a href="#" class="menu-link">Accueil</a></li>
+                    <li class="menu-item"><a href="course.html" class="menu-link">La formation</a></li>
+                    <li class="menu-item"><a href="students.html" class="menu-link">Les étudiants</a></li>
+                    <li class="menu-item"><a href="news.html" class="menu-link">Actualités</a></li>
+                    <li class="menu-item"><a href="contact.html" class="menu-link">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="students-page">
+        <div class="container">
+            <h1 class="h2-like">Les étudiants</h1>
+            <ul class="students-list">
+                <li class="student-item">
+                    <figure class="student-img">
+                        <img src="img/students/portrait-francine-auhi-01.png" srcset="img/students/portrait-francine-auhi-01@2x.png" alt="Portrait de Francine Auhi">
+                    </figure>
+                    <h2 class="h3-like">Francine Auhi</h2>
+                    <a class="student-link" href="students-pres.html">En savoir plus</a>
+                </li>
+                <li class="student-item">
+                    <figure class="student-img">
+                        <img src="img/students/portrait-ali-korn-01.png" srcset="img/students/portrait-ali-korn-01@2x.png" alt="Portrait de Ali Korn">
+                    </figure>
+                    <h2 class="h3-like">Ali Korn</h2>
+                    <a class="student-link" href="students-pres.html">En savoir plus</a>
+                </li>
+                <li class="student-item">
+                    <figure class="student-img">
+                        <img src="img/students/portrait-jean-vascrit-01.png" srcset="img/students/portrait-jean-vascrit-01@2x.png" alt="Portrait de Jean Vascrit">
+                    </figure>
+                    <h2 class="h3-like">Jean Vascrit</h2>
+                    <a class="student-link" href="students-pres.html">En savoir plus</a>
+                </li>
+                <li class="student-item">
+                    <figure class="student-img">
+                        <img src="img/students/portrait-lara-velle-01.png" srcset="img/students/portrait-lara-velle-01@2x.png" alt="Portrait de Lara Velle">
+                    </figure>
+                    <h2 class="h3-like">Lara Velle</h2>
+                    <a class="student-link" href="students-pres.html">En savoir plus</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="js/nav.js"></script>
+
 </body>
 </html>

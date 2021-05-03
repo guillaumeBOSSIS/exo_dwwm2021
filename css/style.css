@@ -183,40 +183,81 @@ button {
 }
 
 .btn {
+     /*card-btn-------------*/
      margin-top: auto;
      display: inline-flex;
      align-items: center;
      justify-content: center;
      color: #fff;
+     /* font-family: "Montserrat", sans-serif; */
+     font-weight: 600;
+     font-size: 2rem;
      background-color: var(--primary);
      width: 100%;
      padding-top: .6rem;
      padding-bottom: .6rem;
-     font-size: 2rem;
      transition: .3s;
 }
 
 .btn img {
+     /*card-btn, form-btn-------------*/
      margin-left: 1.6rem;
      max-width: 2rem;
      max-height: 2rem;
 }
 
+.btn-form img,
+.btn-form svg {
+     /*card-btn, form-btn-------------*/
+     margin-left: 2rem;
+     max-width: 2rem;  /* C */
+     max-height: 2rem;  /* C */
+}
+
 .btn-form {
-     max-width: 18rem;
-     height: 4.8rem;
-     transition: .3s;
+     display: inline-flex; /* C */
+     align-items: center; /* C */
+     justify-content: center; /* C */
+     color: #fff; /* C */
+     font-weight: 600; /* C */
+     font-size: 2rem; /* C */
+     background-color: var(--primary); /* C */
+     /* max-width: 18rem;
+     height: 4.8rem; */
+     transition: .3s; /* C */
      border-radius: .4rem;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+     padding-left: 2rem;
+     padding-right: 2rem;
 }
 
 .btn-form:hover {
-     background-color: #33110080;
+     background-color: #fff;
+     box-shadow: 0 0 0 .2rem var(--primary);
+     color: var(--primary)
 }
 
 @media screen and (min-width: 48em) {
-     .btn {
+     .btn,
+     .btn-form {
           font-size: 2.4rem;
      }
+}
+
+/* SVG -------------------*/
+
+.arrow-svg {
+     fill: none;
+     stroke: #fff;
+     stroke-linecap: round;
+     stroke-linejoin: round;
+     stroke-width: 2px;
+     transition: .3s;
+}
+
+.btn-form:hover .arrow-svg {
+     stroke: var(--primary);
 }
 
 /* Components slider ---------------------------------- */
@@ -386,8 +427,8 @@ button {
      color: #fff;
      background-color: var(--primary);
      /* height: 10rem; */
-     padding-top: 2rem;
-     padding-bottom: 2rem;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
 }
 
 .main-header .container {
@@ -398,7 +439,7 @@ button {
 }
 
 .logo {
-     font-size: 4.8rem;
+     font-size: 3rem;
      line-height: 1.16;
      /* text-transform: uppercase; */
      font-weight: 700;
@@ -439,7 +480,16 @@ button {
 }
 
 @media screen and (min-width: 48em) {
-	.toggle-menu {
+     .main-header {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+     }
+
+	.logo {
+          font-size: 4.8rem;
+     }
+     
+     .toggle-menu {
 		display: none;
 	}
 
@@ -821,20 +871,17 @@ ul.students-list {
                               "social";
      padding-top: 4rem;
      padding-bottom: 3.6rem;
-     gap: 4rem;
+     gap: 2rem;
      align-items: center;
-}
-
-.main-footer-title {
-     color: #fff;
-     font-size: 2rem;
-     font-weight: 600;
-     text-align: left;
 }
 
 .address-list {
      text-align: left;
-     font-size: 2rem;
+     font-size: 1.6rem;
+}
+
+.address-title {
+     font-weight: 600;
 }
 
 .main-footer-legal {
@@ -917,7 +964,13 @@ ul.students-list {
           grid-template-columns: 3fr 2fr;
           grid-template-areas:     "address   address"
                                    "legal     social";
+          gap: 4rem;
      }
+
+     .address-list {
+          font-size: 2rem;
+     }
+
      .main-footer-legal {
           align-items: flex-start;
      }
@@ -1000,18 +1053,21 @@ ul.students-list {
      padding-bottom: 4rem;
 }
 
-.contact-page .container {
-     max-width: 105.8
-}
+
 
 .contact-form {
      display: grid;
      grid-template-columns: 1fr;
-     /* margin-top: 6.8rem; */
-     /* margin-bottom: 4rem; */
      row-gap: 2rem;
      column-gap: 3.2rem;
      text-align: left;
+     max-width: 105.8rem;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.formgroup {
+     font-size: 1.6rem;
 }
 
 .fullwidth {
@@ -1020,20 +1076,19 @@ ul.students-list {
 
 label {
      display: block;
-     font-size: 2rem;
-     margin-top: 1.5rem;
+     /* font-size: 2rem; */
+     /* margin-top: 1.5rem; */
 }
 
 input,
 textarea {
      width: 100%;
      font-size: 1.6rem;
-     /* color: #33110080; */
      border-bottom: 0.1rem solid #707070;
      border-top: none;
      border-left: none;
      border-right: none;
-     margin-top: .4rem;   
+     margin-top: .5rem;   
 }
 
 input::placeholder,
@@ -1044,11 +1099,11 @@ textarea::placeholder {
 
 #name,
 #email {
-     height: 4.8rem;
+     height: 2.5rem;
 }
 
 #msg {
-     height: 23.6rem;
+     height: 12rem;
      resize: none;
 }
 
@@ -1056,21 +1111,33 @@ textarea::placeholder {
      text-align: right;
 }
 
-@media screen and (min-width: 36em) {
-     label {
-          font-size: 2rem;
-          margin-top: 3.3rem;
-     }
-     input,
-     textarea {
-          font-size: 2rem;
-          margin-top: .8rem;   
-     }
+@media screen and (min-width: 36em) {  
+
 }
 
 @media screen and (min-width: 48em) {
      .contact-form {
           grid-template-columns: repeat(2, 1fr);
+          row-gap: 4.45rem;
+     }
+     .formgroup {
+          font-size: 2rem;
+     }
+     
+     input,
+     textarea {
+          font-size: 2rem;
+          margin-top: .95rem;
+     }
+
+     #name,
+     #email {
+          height: 4.5rem;
+     }
+
+     #msg {
+          height: 23.45rem;
+          resize: none;
      }
 }
 

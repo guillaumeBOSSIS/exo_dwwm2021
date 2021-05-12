@@ -79,6 +79,7 @@
 :focus {
 	outline: .4rem solid var(--focus);
      outline-style: outset;
+     border-radius: .4rem;
 }
 
 input:focus,

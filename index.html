@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - DWWM2021-1 Guillaume BOSSIS</title>
+    <title>Home - DWWM2021-1</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,9 +16,8 @@
         <div class="logo">DWWM</div>
         <nav class="main-nav">
             <button class="toggle-menu" aria-expanded="false" aria-controls="menu">Menu</button>
-            <!-- ul.menu>li.menu-item*5>a.menu-link -->
             <ul id="menu" class="menu" role="list" hidden>
-                <li class="menu-item"><a href="#" class="menu-link">Accueil</a></li>
+                <li class="menu-item"><a href="#" class="menu-link menu-current">Accueil</a></li>
                 <li class="menu-item"><a href="course.html" class="menu-link">La formation</a></li>
                 <li class="menu-item"><a href="students.html" class="menu-link">Les étudiants</a></li>
                 <li class="menu-item"><a href="news.html" class="menu-link">Actualités</a></li>
@@ -51,10 +50,10 @@
                 <div class="card-news-body">
                     <div class="card-news-date"><img src="img/icons/icon-date.svg" alt="Icône de calendrier">12/02/2020</div>
                     <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h3>
-                    <p class="p-card">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <p class="p-card">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
                 </div>
                 <div class="btn">Lire la suite<img src="img/icons/icon-arrow-circle-right.svg" alt="" aria-hidden="true"></div>
-                <a href="news-detail.html" class="card-link"></a>
+                <a href="news-detail.html" class="card-link"><span class="screen-reader-text">Lire la suite</span></a>
             </article>
             <article class="card">
                 <figure class="card-img"> 
@@ -62,11 +61,11 @@
                 </figure>
                 <div class="card-news-body">
                     <div class="card-news-date"><img src="img/icons/icon-date.svg" alt="Icône de calendrier">12/02/2020</div>
-                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h3>
                     <p class="p-card">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
                 </div>
                 <div class="btn">Lire la suite<img src="img/icons/icon-arrow-circle-right.svg" alt="" aria-hidden="true"></div>
-                <a href="news-detail.html" class="card-link"></a>
+                <a href="news-detail.html" class="card-link"><span class="screen-reader-text">Lire la suite</span></a>
             </article>
             <article class="card">
                 <figure class="card-img"> 
@@ -77,8 +76,8 @@
                     <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h3>
                     <p class="p-card">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
                 </div>
-                <div class="btn">Lire la suite<img class="arrow" src="img/icons/icon-arrow-circle-right copy (2).svg"  alt="" aria-hidden="true">
-                <a href="news-detail.html" class="card-link"></a>
+                <div class="btn">Lire la suite<img src="img/icons/icon-arrow-circle-right.svg" alt="" aria-hidden="true"></div>
+                <a href="news-detail.html" class="card-link"><span class="screen-reader-text">Lire la suite</span></a>
             </article>
         </div>
     </div>
@@ -90,35 +89,35 @@
         <ul class="students-list">
             <li class="student-item">
                 <figure class="student-img">
-                    <img src="img/students/portrait-francine-auhi-01.png" srcset="img/students/portrait-francine-auhi-01@2x.png" alt="Portrait de Francine Auhi">
+                    <img src="img/students/portrait-francine-auhi.png" srcset="img/students/portrait-francine-auhi@2x.png" alt="Portrait de Francine Auhi">
                 </figure>
                 <h3>Francine Auhi</h3>
-                <p class="p-link-style">En savoir plus</p>
-                <a href="students-pres.html" class="student-link"></a>
+                <div class="student-link-style">En savoir plus</div>
+                <a href="students-pres.html" class="student-link"><span class="screen-reader-text">En savoir plus</span></a>
             </li>
             <li class="student-item">
                 <figure class="student-img">
-                    <img src="img/students/portrait-ali-korn-01.png" srcset="img/students/portrait-ali-korn-01@2x.png" alt="Portrait de Ali Korn">
+                    <img src="img/students/portrait-ali-korn.png" srcset="img/students/portrait-ali-korn@2x.png" alt="Portrait de Ali Korn">
                 </figure>
                 <h3>Ali Korn</h3>
-                <p class="p-link-style">En savoir plus</p>
-                <a href="students-pres.html" class="student-link"></a>
+                <div class="student-link-style">En savoir plus</div>
+                <a href="students-pres.html" class="student-link"><span class="screen-reader-text">En savoir plus</span></a>
             </li>
             <li class="student-item">
                 <figure class="student-img">
-                    <img src="img/students/portrait-jean-vascrit-01.png" srcset="img/students/portrait-jean-vascrit-01@2x.png" alt="Portrait de Jean Vascrit">
+                    <img src="img/students/portrait-jean-vascrit.png" srcset="img/students/portrait-jean-vascrit@2x.png" alt="Portrait de Jean Vascrit">
                 </figure>
                 <h3>Jean Vascrit</h3>
-                <p class="p-link-style">En savoir plus</p>
-                <a href="students-pres.html" class="student-link"></a>
+                <div class="student-link-style">En savoir plus</div>
+                <a href="students-pres.html" class="student-link"><span class="screen-reader-text">En savoir plus</span></a>
             </li>
             <li class="student-item">
                 <figure class="student-img">
-                    <img src="img/students/portrait-lara-velle-01.png" srcset="img/students/portrait-lara-velle-01@2x.png" alt="Portrait de Lara Velle">
+                    <img src="img/students/portrait-lara-velle.png" srcset="img/students/portrait-lara-velle@2x.png" alt="Portrait de Lara Velle">
                 </figure>
                 <h3>Lara Velle</h3>
-                <p class="p-link-style">En savoir plus</p>
-                <a href="students-pres.html" class="student-link"></a>
+                <div class="student-link-style">En savoir plus</div>
+                <a href="students-pres.html" class="student-link"><span class="screen-reader-text">En savoir plus</span></a>
             </li>
         </ul>
     </div>
@@ -134,21 +133,21 @@
                 </figure>
                 <div class="card-module-body">
                     <h3>Module HTML/CSS</h3>
-                    <p class="p-card">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <p class="p-card">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
                 </div>
                 <div class="btn">Lire la suite<img src="img/icons/icon-arrow-circle-right.svg" alt="" aria-hidden="true"></div>
-                <a href="course-module.html" class="card-link"></a>
+                <a href="course-module.html" class="card-link"><span class="screen-reader-text">Lire la suite</span></a>
             </article>
             <article class="card">
                 <figure class="card-img"> 
-                    <img src="img/modules/module-javascript-01.jpg" srcset="img/modules/module-javascript-01@2x.jpg" alt="Plan serré sur une partie d'écan d'ordinateur affichant du code">
+                    <img src="img/modules/module-javascript.jpg" srcset="img/modules/module-javascript@2x.jpg" alt="Plan serré sur une partie d'écan d'ordinateur affichant du code">
                 </figure>
                 <div class="card-module-body">
                     <h3>Module JavaScript</h3>
                     <p class="p-card">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, …</p>
                 </div>
                 <div class="btn">Lire la suite<img src="img/icons/icon-arrow-circle-right.svg" alt="" aria-hidden="true"></div>
-                <a href="course-module.html" class="card-link"></a>
+                <a href="course-module.html" class="card-link"><span class="screen-reader-text">Lire la suite</span></a>
             </article>
         </div>
     </div>
@@ -158,28 +157,28 @@
     <div class="container">
         <div class="main-footer-grid">
             <address class='main-footer-address'>
-                <p class="main-footer-title">Développeur Web et Web Mobile</p>
                 <ul class="address-list">
+                    <li class="address-title">Développeur Web et Web Mobile</li>
                     <li class="address-item">CEFIM</li>
                     <li class="address-item">32 Avenue Marcel Dassault</li>
                     <li class="address-item">37200 Tours</li>
-                    <li class="address-item">T : 02 47 40 26 80</li>
+                    <li class="address-item"><a class="footer-link" href="tel:+33247402680">T : 02 47 40 26 80</a></li>
                 </ul>
             </address>
             <div class="main-footer-legal">
-                <a class="legal-link" href="policy.html">Mentions légales</a>
-                <a class="legal-link" href="policy.html">Politique de confidentialité</a>
+                <a class="footer-link" href="policy.html">Mentions légales</a>
+                <a class="footer-link" href="policy.html">Politique de confidentialité</a>
             </div>
             <div class="main-footer-social">
                 <ul class="social-list">
                     <li>
-                        <a class="social-icon" href="#"><img src="img/icons/icon-facebook.svg" alt="Icône de Facebook"></a>
+                        <a class="social-icon" href="https://www.facebook.com/cefimformation/" target="_blank"><img src="img/icons/icon-facebook.svg" alt="Icône de Facebook"></a>
                     </li>
                     <li>
-                        <a class="social-icon" href="#"><img src="img/icons/icon-twitter.svg" alt="Icône de Twitter"></a>
+                        <a class="social-icon" href="https://twitter.com/cefimformation?lang=fr" target="_blank"><img src="img/icons/icon-twitter.svg" alt="Icône de Twitter"></a>
                     </li>
                     <li>
-                        <a class="social-icon" href="#"><img src="img/icons/icon-linkedin.svg" alt="Icône de Linkedin"></a>
+                        <a class="social-icon" href="https://www.linkedin.com/school/cefim/?originalSubdomain=fr" target="_blank"><img src="img/icons/icon-linkedin.svg" alt="Icône de Linkedin"></a>
                     </li>
                 </ul>
             </div>
